@@ -12,7 +12,7 @@ class tiempo {
         this.crono = crono;
     }
 }
-
+// Clase para controlar/gestionar la carrera
 public class Carrera {
     Circuito circuito;
     int numeroVueltas;

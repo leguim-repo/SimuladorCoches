@@ -20,10 +20,13 @@ public class Test {
         System.out.println(cirCastelloli.toString());
 
         Carrera competicion;
-        competicion = new Carrera(cirCastelloli,1,Tools.crearParticipantes(4));
-
+        competicion = new Carrera(cirCastelloli,5,Tools.crearParticipantes(5));
         competicion.simularCarrera();
 
+        competicion = new Carrera(cirCastelloli,5,Tools.crearParticipantes(5));
+        competicion.simularCarrera();
 
+        competicion = new Carrera(cirNordschleife,5,Tools.crearParticipantes(5));
+        competicion.simularCarrera();
     }
 }
