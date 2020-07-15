@@ -1,0 +1,28 @@
+Level 1 (Minimo Requerido):
+    + Coche
+        * Marcas
+        * Velocidad (Maxima entre 0 - X) m/s
+
+    + Circuito
+        * Longitud
+        * CantidadVueltas
+        * Participantes Coches[]
+
+        while() {
+            cada ciclo simula 1 segundo
+        }
+
+Level 2
+    distanciaTotal = distanciaInicial + v*t + 0.5 a*t^2 MRUA
+    distanciaInicial = 0
+    distanciaTotal = v*t + 0.5 a*t^2
+
+    F = a * m -> a = F/m
+
+Level 3
+    Añadir curvas al Circuito
+
+
+
+
+
