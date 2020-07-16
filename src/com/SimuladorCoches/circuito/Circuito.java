@@ -1,7 +1,7 @@
 package com.SimuladorCoches.circuito;
 
 public class Circuito {
-    String nombre;
+    public String nombre;
     public double longitud;
     int numerocurvas;
     /*

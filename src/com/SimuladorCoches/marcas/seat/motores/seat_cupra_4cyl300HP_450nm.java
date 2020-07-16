@@ -3,9 +3,11 @@ package com.SimuladorCoches.marcas.seat.motores;
 import com.SimuladorCoches.Tools;
 import com.SimuladorCoches.motor.Motor;
 
-public class seat_4cyl330HP_400nm extends Motor {
-    public seat_4cyl330HP_400nm(double torque, double masa) {
-        super(torque, masa);
+public class seat_cupra_4cyl300HP_450nm extends Motor {
+
+    public seat_cupra_4cyl300HP_450nm() {
+        this.torqueMax=450;
+        this.masa=80;
     }
 
     @Override

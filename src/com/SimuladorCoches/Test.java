@@ -7,6 +7,11 @@ import com.SimuladorCoches.marcas.seat.Seat;
 
 public class Test {
 
+    enum Tipo {
+        OEM,
+        CUPRA,
+        RACE
+    }
     public static void main(String[] args) {
         Coche car;
         car = new Seat("Cupra",330);
@@ -33,5 +38,14 @@ public class Test {
         //Este es durisimo no lo aguantan
         //competicion = new Carrera(cirNordschleife,1,Tools.crearParticipantes(10));
         //competicion.simularCarrera();
+
+
+        //pruebas.....para generar tipos de coches diferentes y asignar el motor de forma automatica
+        System.out.println("enum");
+        System.out.println(Tipo.CUPRA);
+        System.out.println((int)Tools.randomConLimites(0,Tipo.values().length));
+        System.out.println(Tipo.values()[(int)Tools.randomConLimites(0,Tipo.values().length)]);
+
+
     }
 }

@@ -1,11 +1,13 @@
 package com.SimuladorCoches.carrera;
 
+import com.SimuladorCoches.Tools;
 import com.SimuladorCoches.circuito.Circuito;
 import com.SimuladorCoches.coche.Coche;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
+//mini clase para controlar los tiempos
 class tiempo {
     String marca;
     int dorsal;
@@ -47,9 +49,10 @@ public class Carrera {
     void imprimirTiempos() {
         //esta funcion imprime los tiempos de los que han acabado y de los que no han finalizado la carrera
         //deberia existir solo una funcion con el for y pasarle el ArrayList
-        System.out.print("\n\nTabla de tiempos\n----------------\n");
+        System.out.println("Resultados de la carrera simulada en el "+this.circuito.nombre);
+        System.out.print("\nTabla de tiempos\n----------------\n");
         for (tiempo t: tablaTiempos) {
-            System.out.println("Vehiculo: "+t.marca+" Dorsal: "+t.dorsal+" Tiempo: "+t.crono+" s");
+            System.out.println("Vehiculo: "+t.marca+" Dorsal: "+t.dorsal+" Tiempo: "+Tools.getTimeMinutes((int)t.crono));
         }
         System.out.print("\n\nTabla de DNF\n----------------\n");
         for (tiempo t: tablaDNF) {
@@ -110,13 +113,11 @@ public class Carrera {
                 corredor.correr(crono);
                 System.out.println(corredor.toString());
             }
-
             corredoresCopia=this.checkWinner(corredoresCopia,crono);
             corredoresCopia=this.generarFallosMecanicos(corredoresCopia,crono);
-
             crono +=1;
         } while(!corredoresCopia.isEmpty());
-        System.out.println("Simulacion finalizada. Tiempo total de simulacion "+crono+" segundos");
+        System.out.println("\nSimulacion finalizada. Tiempo total de simulacion "+crono+" segundos");
         imprimirTiempos();
     }
 }
