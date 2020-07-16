@@ -1,4 +1,7 @@
-package com.SimuladorCoches;
+package com.SimuladorCoches.carrera;
+
+import com.SimuladorCoches.circuito.Circuito;
+import com.SimuladorCoches.coche.Coche;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -21,8 +24,6 @@ public class Carrera {
     ArrayList<Coche> participantes;
     private ArrayList<tiempo> tablaTiempos;
     private ArrayList<tiempo> tablaDNF; // corredores que no acaban la carrera por fallos mecanicos
-
-
 
     public Carrera(Circuito circuito, int numeroVueltas, ArrayList<Coche> participantes) {
         this.circuito = circuito;
@@ -94,34 +95,6 @@ public class Carrera {
 
         imprimirTiempos();
     }
-
-
-    /*
-    Pa borrar....primeras pruebas
-    public void simularUnoaUno(){
-        //bucle while de la carrera
-        //calcular por longitud
-        //longitud de la carrera = vueltas * longitud circuito
-        //cada ciclo del bucle es 1 segundo
-        //aqui el crono si me funciona bien
-        //en esta simulacion los coches corren uno a uno
-        int crono=0;
-        int c=0;
-        for (Coche corredor: participantes) {
-            do {
-                corredor.correr();
-                System.out.println(corredor.toString());
-                crono+=1;
-            }while( corredor.odometro<this.longitudCarrera);
-            tiempos[c][0]=corredor.marca;
-            tiempos[c][1]=crono;
-            crono=0;
-            c+=1;
-        }
-        this.imprimirTiempos();
-    }
-
-     */
 }
 
 

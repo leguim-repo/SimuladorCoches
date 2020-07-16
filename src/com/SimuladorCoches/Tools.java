@@ -1,11 +1,16 @@
 package com.SimuladorCoches;
 
+import com.SimuladorCoches.coche.Coche;
+import com.SimuladorCoches.marcas.Seat;
+import com.SimuladorCoches.motor.Motor;
+import com.SimuladorCoches.ruedas.Ruedas;
+
 import java.util.ArrayList;
 import java.util.Random;
 
-class Tools {
+public class Tools {
 
-    static double generadorFallos(double rangeMin, double rangeMax) {
+    public static double generadorFallos(double rangeMin, double rangeMax) {
         Random r = new Random();
         double randomValue = rangeMin + (rangeMax - rangeMin) * r.nextDouble();
         return randomValue;
@@ -17,12 +22,12 @@ class Tools {
         return randomNumber;
     }
 
-    static double randomConLimites(double lower, double upper) {
+    public static double randomConLimites(double lower, double upper) {
         return (Math.random() * (upper - lower)) + lower;
     }
 
     // metodo para crear motores
-    static ArrayList<Motor> crearMotores(int numero,double torqueMin, double torqueMax) {
+    static ArrayList<Motor> crearMotores(int numero, double torqueMin, double torqueMax) {
         ArrayList<Motor> listamotores = new ArrayList<Motor>();
         while(listamotores.size()<numero) {
             Motor m = new Motor("2cyl300hp",Tools.randomConLimites(torqueMin,torqueMax),90);
@@ -49,7 +54,7 @@ class Tools {
         }
         return participantes;
     }
-    static double kmh2ms(double kmh) {
+    public static double kmh2ms(double kmh) {
         return kmh/3.6;
     }
 }

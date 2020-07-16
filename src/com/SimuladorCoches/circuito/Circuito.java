@@ -1,8 +1,8 @@
-package com.SimuladorCoches;
+package com.SimuladorCoches.circuito;
 
 public class Circuito {
     String nombre;
-    double longitud;
+    public double longitud;
     int numerocurvas;
     /*
      Las curvas quizas se podrian clasificar, ya que no todas las curvas son iguales

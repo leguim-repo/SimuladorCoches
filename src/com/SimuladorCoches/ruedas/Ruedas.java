@@ -1,8 +1,10 @@
-package com.SimuladorCoches;
+package com.SimuladorCoches.ruedas;
+
+import com.SimuladorCoches.Tools;
 
 public class Ruedas {
     String modelo;
-    double masa;
+    public double masa;
     double calidad; // probabilidad de que explote
     int tipo;
 
@@ -13,7 +15,7 @@ public class Ruedas {
     }
 
     //de forma aleatoria explotan las ruedas
-    boolean existsCatastrophicDamage() {
+    public boolean existsCatastrophicDamage() {
         double p = Tools.generadorFallos(1.0,100.0);
         if ( p  > 99.65577 ) {
             return true;

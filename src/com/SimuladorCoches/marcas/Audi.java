@@ -1,6 +1,10 @@
-package com.SimuladorCoches;
+package com.SimuladorCoches.marcas;
 
-public class Audi extends Coche{
+import com.SimuladorCoches.coche.Coche;
+import com.SimuladorCoches.motor.Motor;
+import com.SimuladorCoches.ruedas.Ruedas;
+
+public class Audi extends Coche {
 
     public Audi(String modelo, double velocidadMaximaKMH) {
         super(modelo, velocidadMaximaKMH);

@@ -1,17 +1,21 @@
-package com.SimuladorCoches;
+package com.SimuladorCoches.coche;
 
-abstract class Coche {
+import com.SimuladorCoches.ruedas.Ruedas;
+import com.SimuladorCoches.Tools;
+import com.SimuladorCoches.motor.Motor;
 
-    String modelo;
+public abstract class Coche {
+
+    public String modelo;
     private double velocidadMaximaKMH;
-    double odometro=0;
+    public double odometro=0;
     double velocidadActualKMH =0;
     double aceleracion=0;
     double masaTotal;
     double masaChasis=1200;
-    int dorsal;
-    Motor motor;
-    Ruedas ruedas;
+    public int dorsal;
+    public Motor motor;
+    public Ruedas ruedas;
 
     public Coche(String modelo, double velocidadMaximaKMH) {
         this.modelo = modelo;

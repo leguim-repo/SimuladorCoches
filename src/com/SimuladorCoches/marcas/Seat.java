@@ -1,4 +1,8 @@
-package com.SimuladorCoches;
+package com.SimuladorCoches.marcas;
+
+import com.SimuladorCoches.coche.Coche;
+import com.SimuladorCoches.motor.Motor;
+import com.SimuladorCoches.ruedas.Ruedas;
 
 public class Seat extends Coche {
     public Seat(String modelo, double velocidadMaximaKMH) {

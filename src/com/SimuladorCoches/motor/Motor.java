@@ -1,9 +1,11 @@
-package com.SimuladorCoches;
+package com.SimuladorCoches.motor;
+
+import com.SimuladorCoches.Tools;
 
 public class Motor {
     String modelo;
-    double torque;
-    double masa;
+    public double torque;
+    public double masa;
 
 
     public Motor(String modelo, double torque, double masa) {
@@ -13,7 +15,7 @@ public class Motor {
     }
 
     //funcion desactivada esta siendo complejo regularlo de forma aleatoria
-    boolean existsCatastrophicDamage() {
+    public boolean existsCatastrophicDamage() {
         if ( Tools.randomConLimites(0,5) > 3 ) {
             return false;
         }
