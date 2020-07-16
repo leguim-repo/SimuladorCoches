@@ -5,6 +5,12 @@ import java.util.Random;
 
 class Tools {
 
+    static double generadorFallos(double rangeMin, double rangeMax) {
+        Random r = new Random();
+        double randomValue = rangeMin + (rangeMax - rangeMin) * r.nextDouble();
+        return randomValue;
+    }
+
     static int dorsalesRandom(int max) {
         Random objGenerator = new Random();
         int randomNumber = objGenerator.nextInt(max);
@@ -34,7 +40,7 @@ class Tools {
         Ruedas ruedas = new Ruedas(80);
 
         while(participantes.size()<numero) {
-            car= new Coche(marcas[(int)(Math.random()*marcas.length)],
+            car= new Seat(marcas[(int)(Math.random()*marcas.length)],
                     dorsalesRandom(20),
                     330,
                     crearMotores(numero,300,400).get((int) randomConLimites(0,numero)),

@@ -1,28 +1,25 @@
 package com.SimuladorCoches;
 
-public class Coche {
+abstract class Coche {
 
-    String marca;
-
-    public Coche(String marca, double velocidadMaximaKMH) {
-        this.marca = marca;
-        this.velocidadMaximaKMH = velocidadMaximaKMH;
-    }
-
+    String modelo;
     private double velocidadMaximaKMH;
     double odometro=0;
     double velocidadActualKMH =0;
     double aceleracion=0;
     double masaTotal;
-    double masaChasis=800;
+    double masaChasis=1200;
     int dorsal;
     Motor motor;
     Ruedas ruedas;
 
+    public Coche(String modelo, double velocidadMaximaKMH) {
+        this.modelo = modelo;
+        this.velocidadMaximaKMH = velocidadMaximaKMH;
+    }
 
-
-    public Coche(String marca,int dorsal, double velocidadMaximaKMH, Motor motor, Ruedas ruedas) {
-        this.marca = marca;
+    public Coche(String modelo, int dorsal, double velocidadMaximaKMH, Motor motor, Ruedas ruedas) {
+        this.modelo = modelo;
         this.dorsal = dorsal;
         this.velocidadMaximaKMH = velocidadMaximaKMH;
         this.motor = motor;
@@ -30,30 +27,38 @@ public class Coche {
         this.masaTotal = masaChasis+motor.masa+ruedas.masa;
     }
 
-    public double velocidadActual() {
+    public double velocidadActual(double crono) {
         //aqui podemos calcular la acceleracion
         // a = ( Vfinal - Vinicial ) / t
         // puesto que t = 1 s -> a = Vfinal - Vinicial
-        double vfinal = Tools.randomConLimites(0,this.velocidadMaximaKMH);
-        this.aceleracion = vfinal - this.velocidadActualKMH;
-        this.velocidadActualKMH = vfinal;
+        double a = this.motor.torque / this.masaTotal;
+        double Vactual = 0;
+        double t = crono;
+        double Vfinal = Vactual + a * t;
+        //double vfinal = Tools.randomConLimites(0,this.velocidadMaximaKMH);
+        //this.aceleracion = Vfinal - this.velocidadActualKMH;
+        this.aceleracion = a;
+        this.velocidadActualKMH = Vfinal;
         return velocidadActualKMH;
     }
 
-    public void correr() {
+    public void correr(double crono) {
         //Aqui convierto los Km/H a m/s
-        this.odometro += Tools.kmh2ms(this.velocidadActual());
+        this.odometro += Tools.kmh2ms(this.velocidadActual(crono));
     }
-
 
     @Override
     public String toString() {
         return "Coche{" +
-                "marca='" + marca + '\'' +
+                "marca='" + modelo + '\'' +
                 ", velocidadMaximaKMH=" + velocidadMaximaKMH +
                 ", odometro=" + odometro +
                 ", velocidadActualKMH=" + velocidadActualKMH +
                 ", aceleracion=" + aceleracion +
+                ", masaTotal=" + masaTotal +
+                ", masaChasis=" + masaChasis +
+                ", dorsal=" + dorsal +
+                ", motor.torque=" + motor.torque +
                 '}';
     }
 }

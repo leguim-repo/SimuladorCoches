@@ -2,11 +2,9 @@ package com.SimuladorCoches;
 
 public class Test {
 
-
     public static void main(String[] args) {
         Coche car;
-        car = new Coche("Cupra",330);
-        System.out.println(car.velocidadActual());
+        car = new Seat("Cupra",330);
 
         Circuito cirCatalunya;
         Circuito cirCastelloli;
@@ -20,13 +18,14 @@ public class Test {
         System.out.println(cirCastelloli.toString());
 
         Carrera competicion;
-        competicion = new Carrera(cirCastelloli,5,Tools.crearParticipantes(5));
+
+        competicion = new Carrera(cirCatalunya,1,Tools.crearParticipantes(2));
         competicion.simularCarrera();
 
-        competicion = new Carrera(cirCastelloli,5,Tools.crearParticipantes(5));
-        competicion.simularCarrera();
+        //competicion = new Carrera(cirCastelloli,5,Tools.crearParticipantes(5));
+        //competicion.simularCarrera();
 
-        competicion = new Carrera(cirNordschleife,5,Tools.crearParticipantes(5));
-        competicion.simularCarrera();
+        //competicion = new Carrera(cirNordschleife,5,Tools.crearParticipantes(5));
+        //competicion.simularCarrera();
     }
 }

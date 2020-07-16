@@ -11,4 +11,15 @@ public class Motor {
         this.torque = torque;
         this.masa = masa;
     }
+
+    //funcion desactivada esta siendo complejo regularlo de forma aleatoria
+    boolean existsCatastrophicDamage() {
+        if ( Tools.randomConLimites(0,5) > 3 ) {
+            return false;
+        }
+        else {
+            return false;
+        }
+
+    }
 }
