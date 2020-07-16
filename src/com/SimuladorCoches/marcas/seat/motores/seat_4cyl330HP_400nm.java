@@ -1,7 +1,7 @@
 package com.SimuladorCoches.marcas.seat.motores;
 
+import com.SimuladorCoches.Tools;
 import com.SimuladorCoches.motor.Motor;
-import com.SimuladorCoches.motor.Motor_Actions;
 
 public class seat_4cyl330HP_400nm extends Motor {
     public seat_4cyl330HP_400nm(double torque, double masa) {
@@ -9,21 +9,14 @@ public class seat_4cyl330HP_400nm extends Motor {
     }
 
     @Override
+    //de forma aleatoria se genera un fallo catastrofico de motor
     public boolean existsCatastrophicDamage() {
-        return false;
-    }
-}
-
-
-/*
-    //funcion desactivada esta siendo complejo regularlo de forma aleatoria
-    public boolean existsCatastrophicDamage() {
-        if ( Tools.randomConLimites(0,5) > 3 ) {
-            return false;
+        double p = Tools.generadorFallos(1.0,100.0);
+        if ( p  > 99.91 ) {
+            return true;
         }
         else {
             return false;
         }
-
     }
- */
+}

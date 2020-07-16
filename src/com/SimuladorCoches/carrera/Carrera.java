@@ -10,10 +10,19 @@ class tiempo {
     String marca;
     int dorsal;
     double crono;
+    String motivo;
+
     public tiempo(String marca, int dorsal, double crono) {
         this.marca = marca;
         this.dorsal = dorsal;
         this.crono = crono;
+    }
+
+    public tiempo(String marca, int dorsal, double crono, String motivo) {
+        this.marca = marca;
+        this.dorsal = dorsal;
+        this.crono = crono;
+        this.motivo = motivo;
     }
 }
 // Clase para controlar/gestionar la carrera
@@ -44,7 +53,7 @@ public class Carrera {
         }
         System.out.print("\n\nTabla de DNF\n----------------\n");
         for (tiempo t: tablaDNF) {
-            System.out.println("Vehiculo: "+t.marca+" Dorsal: "+t.dorsal+" Tiempo: "+t.crono+" s");
+            System.out.println("Vehiculo: "+t.marca+" Dorsal: "+t.dorsal+" Motivo DNF: "+t.motivo);
         }
     }
 
@@ -62,16 +71,30 @@ public class Carrera {
 
     // generacion de fallos mecanicos
     ArrayList<Coche> generarFallosMecanicos(ArrayList<Coche> corredores,int crono) {
+        boolean falloNeumatico;
+        boolean falloMotor;
+        String razonFallo="";
         ArrayList<Coche> siguenEnCarrera= new ArrayList<>(); //copio el array de participantes
         for (Coche corredor: corredores) {
-            if (Arrays.asList( corredor.ruedas.existsCatastrophicDamage(),corredor.motor.existsCatastrophicDamage() ).contains(true)){
-                //este se pasa a lista que no acaban
-                this.tablaDNF.add(new tiempo(corredor.modelo,corredor.dorsal,0));
+
+            falloNeumatico=corredor.ruedas.existsCatastrophicDamage();
+            falloMotor=corredor.motor.existsCatastrophicDamage();
+
+            if (Arrays.asList( falloNeumatico, falloMotor ).contains(true)){
+                if (falloNeumatico) {
+                    razonFallo="Fallo Neumaticos";
+                }
+                else if (falloMotor) {
+                    razonFallo+="Fallo Motor";
+                }
+                //el coche ha tenido un fallo catastrofico se pasa a lista que no acaban
+                this.tablaDNF.add(new tiempo(corredor.modelo,corredor.dorsal,0,razonFallo));
                 }
             else {
                 //lista corredores que siguen en pie
                 siguenEnCarrera.add(corredor);
             }
+            razonFallo="";
             }
         return siguenEnCarrera;
     }

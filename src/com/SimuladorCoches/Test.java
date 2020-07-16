@@ -24,13 +24,14 @@ public class Test {
 
         Carrera competicion;
 
-        competicion = new Carrera(cirCatalunya,1,Tools.crearParticipantes(2));
+        competicion = new Carrera(cirCatalunya,2,Tools.crearParticipantes(5));
         competicion.simularCarrera();
 
         //competicion = new Carrera(cirCastelloli,5,Tools.crearParticipantes(5));
         //competicion.simularCarrera();
 
-        //competicion = new Carrera(cirNordschleife,5,Tools.crearParticipantes(5));
+        //Este es durisimo no lo aguantan
+        //competicion = new Carrera(cirNordschleife,1,Tools.crearParticipantes(10));
         //competicion.simularCarrera();
     }
 }

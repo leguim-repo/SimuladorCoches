@@ -27,32 +27,31 @@ public class Tools {
         return (Math.random() * (upper - lower)) + lower;
     }
 
-    // metodo para crear motores automaticamente
-    static ArrayList<Motor> crearMotores(int numero, double torqueMin, double torqueMax) {
+    // metodo para crear un arraylist de motores automaticamente
+    static ArrayList<Motor> crearMotores(int numero) {
         ArrayList<Motor> listamotores = new ArrayList<Motor>();
         while(listamotores.size()<numero) {
-            //Motor m = new Motor("2cyl300hp",Tools.randomConLimites(torqueMin,torqueMax),90);
-            seat_4cyl330HP_400nm m = new seat_4cyl330HP_400nm(400,90);
-            listamotores.add(m);
+            seat_4cyl330HP_400nm motor_seat = new seat_4cyl330HP_400nm(400,90);
+            listamotores.add(motor_seat);
         }
         return listamotores;
     }
 
     // metodo para generar los participantes automaticamente
     static ArrayList<Coche> crearParticipantes(int numero) {
-        String[] modelos = {"Seat Leon", "Seat Cupra Leon", "Seat Ibiza", "Seat Cupra Ibiza"};
+        String[] modelos = {"Seat Leon", "Seat Leon Cupra", "Seat Ibiza", "Seat Ibiza Cupra"};
 
         ArrayList<Coche> participantes = new ArrayList<Coche>();
         Coche car;
 
-        Neumaticos_serie ruedas = new Neumaticos_serie(80);
+        Neumaticos_serie neumaticos = new Neumaticos_serie(80);
 
         while(participantes.size()<numero) {
             car= new Seat(modelos[(int)(Math.random()*modelos.length)],
                     dorsalesRandom(20),
                     330,
-                    crearMotores(numero,300,400).get((int) randomConLimites(0,numero)),
-                    ruedas);
+                    crearMotores(numero).get((int) randomConLimites(0,numero)),
+                    neumaticos);
             participantes.add(car);
         }
         return participantes;

@@ -5,9 +5,11 @@ public class Circuito {
     public double longitud;
     int numerocurvas;
     /*
+     Por el momento las curvas no intervienen en la simulacion
+
      Las curvas quizas se podrian clasificar, ya que no todas las curvas son iguales
-     suave, moderada, fuerte, neutra
-     y aplicar un factor de frenada
+     suave, moderada, fuerte, neutra y aplicar o bien un factor de frenada o un limite de velocidad
+     por otro lado deberiamos saber la longitud de la cuerva de la curva
      */
 
     public Circuito(String nombre, double longitud,int numerocurvas) {

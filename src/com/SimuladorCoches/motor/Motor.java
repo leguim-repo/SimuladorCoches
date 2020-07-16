@@ -1,14 +1,13 @@
 package com.SimuladorCoches.motor;
 
-import com.SimuladorCoches.Tools;
 //Clase motor con sus variables
 public abstract  class Motor implements Motor_Actions{
-    public double torque;
+    public double torqueMax;
     public double masa;
 
 
-    public Motor(double torque, double masa) {
-        this.torque = torque;
+    public Motor(double torqueMax, double masa) {
+        this.torqueMax = torqueMax;
         this.masa = masa;
     }
 

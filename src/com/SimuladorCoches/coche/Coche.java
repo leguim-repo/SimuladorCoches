@@ -35,14 +35,19 @@ public abstract class Coche {
         //aqui podemos calcular la acceleracion
         // a = ( Vfinal - Vinicial ) / t
         // puesto que t = 1 s -> a = Vfinal - Vinicial
-        double a = this.motor.torque / this.masaTotal;
+        double a = this.motor.torqueMax / this.masaTotal;
         double Vactual = 0;
         double t = crono;
         double Vfinal = Vactual + a * t;
         //double vfinal = Tools.randomConLimites(0,this.velocidadMaximaKMH);
         //this.aceleracion = Vfinal - this.velocidadActualKMH;
         this.aceleracion = a;
-        this.velocidadActualKMH = Vfinal;
+        if (Vfinal > this.velocidadMaximaKMH) {
+            Vfinal = this.velocidadMaximaKMH;
+        }
+        else {
+            this.velocidadActualKMH = Vfinal;
+        }
         return velocidadActualKMH;
     }
 
@@ -62,7 +67,7 @@ public abstract class Coche {
                 ", masaTotal=" + masaTotal +
                 ", masaChasis=" + masaChasis +
                 ", dorsal=" + dorsal +
-                ", motor.torque=" + motor.torque +
+                ", motor.torque=" + motor.torqueMax +
                 '}';
     }
 }

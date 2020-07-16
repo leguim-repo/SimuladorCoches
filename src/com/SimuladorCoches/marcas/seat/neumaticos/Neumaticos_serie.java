@@ -12,12 +12,11 @@ public class Neumaticos_serie extends Neumaticos {
     //de forma aleatoria explotan las ruedas
     public boolean existsCatastrophicDamage() {
         double p = Tools.generadorFallos(1.0,100.0);
-        if ( p  > 99.65577 ) {
+        if ( p  > 99.8999 ) {
             return true;
         }
         else {
             return false;
         }
-
     }
 }
