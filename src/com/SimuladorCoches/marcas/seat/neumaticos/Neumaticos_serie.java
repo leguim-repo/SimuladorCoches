@@ -1,19 +1,14 @@
-package com.SimuladorCoches.ruedas;
+package com.SimuladorCoches.marcas.seat.neumaticos;
 
 import com.SimuladorCoches.Tools;
+import com.SimuladorCoches.neumaticos.Neumaticos;
 
-public class Ruedas {
-    String modelo;
-    public double masa;
-    double calidad; // probabilidad de que explote
-    int tipo;
-
-
-    public Ruedas(double masa) {
-        this.masa = masa;
-        this.calidad = Tools.randomConLimites(0,100);
+public class Neumaticos_serie extends Neumaticos {
+    public Neumaticos_serie(double masa) {
+        super(masa);
     }
 
+    @Override
     //de forma aleatoria explotan las ruedas
     public boolean existsCatastrophicDamage() {
         double p = Tools.generadorFallos(1.0,100.0);

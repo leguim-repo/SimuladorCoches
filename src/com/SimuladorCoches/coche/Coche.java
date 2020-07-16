@@ -1,6 +1,6 @@
 package com.SimuladorCoches.coche;
 
-import com.SimuladorCoches.ruedas.Ruedas;
+import com.SimuladorCoches.neumaticos.Neumaticos;
 import com.SimuladorCoches.Tools;
 import com.SimuladorCoches.motor.Motor;
 
@@ -15,14 +15,14 @@ public abstract class Coche {
     double masaChasis=1200;
     public int dorsal;
     public Motor motor;
-    public Ruedas ruedas;
+    public Neumaticos ruedas;
 
     public Coche(String modelo, double velocidadMaximaKMH) {
         this.modelo = modelo;
         this.velocidadMaximaKMH = velocidadMaximaKMH;
     }
 
-    public Coche(String modelo, int dorsal, double velocidadMaximaKMH, Motor motor, Ruedas ruedas) {
+    public Coche(String modelo, int dorsal, double velocidadMaximaKMH, Motor motor, Neumaticos ruedas) {
         this.modelo = modelo;
         this.dorsal = dorsal;
         this.velocidadMaximaKMH = velocidadMaximaKMH;

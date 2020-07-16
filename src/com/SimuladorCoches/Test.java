@@ -3,7 +3,7 @@ package com.SimuladorCoches;
 import com.SimuladorCoches.carrera.Carrera;
 import com.SimuladorCoches.circuito.Circuito;
 import com.SimuladorCoches.coche.Coche;
-import com.SimuladorCoches.marcas.Seat;
+import com.SimuladorCoches.marcas.seat.Seat;
 
 public class Test {
 

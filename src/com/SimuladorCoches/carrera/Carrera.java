@@ -36,13 +36,15 @@ public class Carrera {
     }
 
     void imprimirTiempos() {
-        System.out.println("\n\nTabla de tiempos");
+        //esta funcion imprime los tiempos de los que han acabado y de los que no han finalizado la carrera
+        //deberia existir solo una funcion con el for y pasarle el ArrayList
+        System.out.print("\n\nTabla de tiempos\n----------------\n");
         for (tiempo t: tablaTiempos) {
-            System.out.println(t.marca+" "+t.dorsal+" "+t.crono);
+            System.out.println("Vehiculo: "+t.marca+" Dorsal: "+t.dorsal+" Tiempo: "+t.crono+" s");
         }
-        System.out.println("\nCorredores que no han acabado");
+        System.out.print("\n\nTabla de DNF\n----------------\n");
         for (tiempo t: tablaDNF) {
-            System.out.println(t.marca+" "+t.dorsal+" "+t.crono);
+            System.out.println("Vehiculo: "+t.marca+" Dorsal: "+t.dorsal+" Tiempo: "+t.crono+" s");
         }
     }
 
@@ -90,9 +92,8 @@ public class Carrera {
             corredoresCopia=this.generarFallosMecanicos(corredoresCopia,crono);
 
             crono +=1;
-            System.out.println("crono: "+crono+" s");
         } while(!corredoresCopia.isEmpty());
-
+        System.out.println("Simulacion finalizada. Tiempo total de simulacion "+crono+" segundos");
         imprimirTiempos();
     }
 }

@@ -1,9 +1,10 @@
 package com.SimuladorCoches;
 
 import com.SimuladorCoches.coche.Coche;
-import com.SimuladorCoches.marcas.Seat;
+import com.SimuladorCoches.marcas.seat.Seat;
+import com.SimuladorCoches.marcas.seat.motores.seat_4cyl330HP_400nm;
+import com.SimuladorCoches.marcas.seat.neumaticos.Neumaticos_serie;
 import com.SimuladorCoches.motor.Motor;
-import com.SimuladorCoches.ruedas.Ruedas;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -26,26 +27,28 @@ public class Tools {
         return (Math.random() * (upper - lower)) + lower;
     }
 
-    // metodo para crear motores
+    // metodo para crear motores automaticamente
     static ArrayList<Motor> crearMotores(int numero, double torqueMin, double torqueMax) {
         ArrayList<Motor> listamotores = new ArrayList<Motor>();
         while(listamotores.size()<numero) {
-            Motor m = new Motor("2cyl300hp",Tools.randomConLimites(torqueMin,torqueMax),90);
+            //Motor m = new Motor("2cyl300hp",Tools.randomConLimites(torqueMin,torqueMax),90);
+            seat_4cyl330HP_400nm m = new seat_4cyl330HP_400nm(400,90);
             listamotores.add(m);
         }
         return listamotores;
     }
 
-    // metodo para generar los participantes
+    // metodo para generar los participantes automaticamente
     static ArrayList<Coche> crearParticipantes(int numero) {
-        String[] marcas = {"Cupra", "Seat", "Audi", "VW", "Skoda"};
+        String[] modelos = {"Seat Leon", "Seat Cupra Leon", "Seat Ibiza", "Seat Cupra Ibiza"};
+
         ArrayList<Coche> participantes = new ArrayList<Coche>();
         Coche car;
 
-        Ruedas ruedas = new Ruedas(80);
+        Neumaticos_serie ruedas = new Neumaticos_serie(80);
 
         while(participantes.size()<numero) {
-            car= new Seat(marcas[(int)(Math.random()*marcas.length)],
+            car= new Seat(modelos[(int)(Math.random()*modelos.length)],
                     dorsalesRandom(20),
                     330,
                     crearMotores(numero,300,400).get((int) randomConLimites(0,numero)),
