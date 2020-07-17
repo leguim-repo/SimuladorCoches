@@ -1,12 +1,23 @@
 package com.SimuladorCoches.coche;
 
+import com.SimuladorCoches.marcas.seat.motores.seat_cupra_4cyl300HP_450nm;
+import com.SimuladorCoches.marcas.seat.motores.seat_oem_4cyl190HP_400nm;
+import com.SimuladorCoches.marcas.seat.neumaticos.Neumaticos_serie;
 import com.SimuladorCoches.neumaticos.Neumaticos;
 import com.SimuladorCoches.Tools;
 import com.SimuladorCoches.motor.Motor;
 
+import javax.tools.Tool;
+
 
 public abstract class Coche {
 
+    public enum Tipo {
+        OEM,
+        CUPRA,
+        RACER
+    }
+    public Tipo tipo;
     public String modelo;
     private double velocidadMaximaKMH;
     public double odometro=0;
@@ -16,20 +27,47 @@ public abstract class Coche {
     double masaChasis=1200;
     public int dorsal;
     public Motor motor;
-    public Neumaticos ruedas;
+    public Neumaticos neumaticos;
+
+    //constructor para crear un coche solo dandole el tipo
+    public Coche(Tipo tipo){
+
+        switch (tipo) {
+            case OEM:
+                this.motor = new seat_oem_4cyl190HP_400nm();
+                this.neumaticos = new Neumaticos_serie(50);
+                this.dorsal = Tools.dorsalesRandom(20);
+                this.velocidadMaximaKMH = 350;
+                break;
+
+            case CUPRA:
+                break;
+
+            case RACER:
+                break;
+
+            default:
+                System.out.println("Error al crear coche. Tipo no reconocido");
+            }
+
+
+
+
+    }
 
     public Coche(String modelo, double velocidadMaximaKMH) {
         this.modelo = modelo;
         this.velocidadMaximaKMH = velocidadMaximaKMH;
+
     }
 
-    public Coche(String modelo, int dorsal, double velocidadMaximaKMH, Motor motor, Neumaticos ruedas) {
+    public Coche(String modelo, int dorsal, double velocidadMaximaKMH, Motor motor, Neumaticos neumaticos) {
         this.modelo = modelo;
         this.dorsal = dorsal;
         this.velocidadMaximaKMH = velocidadMaximaKMH;
         this.motor = motor;
-        this.ruedas= ruedas;
-        this.masaTotal = masaChasis+motor.masa+ruedas.masa;
+        this.neumaticos = neumaticos;
+        this.masaTotal = masaChasis+motor.masa+ neumaticos.masa;
     }
 
     public double velocidadActual(double crono) {

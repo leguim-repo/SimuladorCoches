@@ -5,12 +5,14 @@ import com.SimuladorCoches.circuito.Circuito;
 import com.SimuladorCoches.coche.Coche;
 import com.SimuladorCoches.marcas.seat.Seat;
 
+import java.util.zip.CheckedOutputStream;
+
 public class Test {
 
     enum Tipo {
         OEM,
         CUPRA,
-        RACE
+        RACER
     }
     public static void main(String[] args) {
         Coche car;
@@ -41,10 +43,20 @@ public class Test {
 
 
         //pruebas.....para generar tipos de coches diferentes y asignar el motor de forma automatica
+        /*
         System.out.println("enum");
         System.out.println(Tipo.CUPRA);
         System.out.println((int)Tools.randomConLimites(0,Tipo.values().length));
-        System.out.println(Tipo.values()[(int)Tools.randomConLimites(0,Tipo.values().length)]);
+        */
+        for (int x=0; x < 5; x++) {
+
+            //System.out.println(Tipo.values()[(int) Tools.randomConLimites(0, Tipo.values().length)]);
+            //Coche cc = new Seat(Coche.Tipo.values()[(int) Tools.randomConLimites(0, Coche.Tipo.values().length)]);
+            Coche cc = new Seat(Coche.Tipo.OEM);
+            System.out.println(cc.tipo);
+
+        }
+
 
 
     }

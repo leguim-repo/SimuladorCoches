@@ -2,7 +2,7 @@ package com.SimuladorCoches;
 
 import com.SimuladorCoches.coche.Coche;
 import com.SimuladorCoches.marcas.seat.Seat;
-import com.SimuladorCoches.marcas.seat.motores.seat_4cyl190HP_400nm;
+import com.SimuladorCoches.marcas.seat.motores.seat_oem_4cyl190HP_400nm;
 import com.SimuladorCoches.marcas.seat.motores.seat_cupra_4cyl300HP_450nm;
 import com.SimuladorCoches.marcas.seat.neumaticos.Neumaticos_serie;
 import com.SimuladorCoches.motor.Motor;
@@ -23,7 +23,7 @@ public class Tools {
         return randomValue;
     }
 
-    static int dorsalesRandom(int max) {
+    public static int dorsalesRandom(int max) {
         Random objGenerator = new Random();
         int randomNumber = objGenerator.nextInt(max);
         return randomNumber;
@@ -40,7 +40,7 @@ public class Tools {
         while(listamotores.size()<numero) {
             //seat_cupra_4cyl300HP_450nm motor_seat = new seat_cupra_4cyl300HP_450nm(400,90);
             seat_cupra_4cyl300HP_450nm seat_motor_cupra = new seat_cupra_4cyl300HP_450nm();
-            seat_4cyl190HP_400nm seat_motor_oem = new seat_4cyl190HP_400nm();
+            seat_oem_4cyl190HP_400nm seat_motor_oem = new seat_oem_4cyl190HP_400nm();
             listamotores.add(seat_motor_oem);
 
             //listamotores.add(seat_motor_cupra);

@@ -12,4 +12,8 @@ public class Seat extends Coche {
     public Seat(String modelo, int dorsal, double velocidadMaximaKMH, Motor motor, Neumaticos ruedas) {
         super(modelo, dorsal, velocidadMaximaKMH, motor, ruedas);
     }
+
+    public Seat(Tipo tipo) {
+        super(tipo);
+    }
 }

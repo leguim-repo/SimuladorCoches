@@ -6,7 +6,6 @@ import com.SimuladorCoches.circuito.Circuito;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
         //Variables para la simulacion
         //circuito
         Circuito cirCatalunya;

@@ -1,5 +1,12 @@
 package com.SimuladorCoches.circuito;
+class Curvas {
+    int numeroCurva;
+    int tipoCurva;
+    double puntoInicioCurva;
+    double puntoFinalCurva;
 
+
+}
 public class Circuito {
     public String nombre;
     public double longitud;

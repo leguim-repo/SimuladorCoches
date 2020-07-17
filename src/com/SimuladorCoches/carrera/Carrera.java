@@ -80,7 +80,7 @@ public class Carrera {
         ArrayList<Coche> siguenEnCarrera= new ArrayList<>(); //copio el array de participantes
         for (Coche corredor: corredores) {
 
-            falloNeumatico=corredor.ruedas.existsCatastrophicDamage();
+            falloNeumatico=corredor.neumaticos.existsCatastrophicDamage();
             falloMotor=corredor.motor.existsCatastrophicDamage();
 
             if (Arrays.asList( falloNeumatico, falloMotor ).contains(true)){
