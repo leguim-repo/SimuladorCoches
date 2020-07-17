@@ -20,36 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f045b72-c316-486f-a473-e3414bc1af77" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/SimuladorCoches.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimuladorCoches.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SimuladorCoches.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/SimuladorCoches/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SimuladorCoches/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/SimuladorCoches/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SimuladorCoches/pruebas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/SimuladorCoches/Tools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SimuladorCoches/Tools.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/SimuladorCoches/carrera/Carrera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SimuladorCoches/carrera/Carrera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/SimuladorCoches/circuito/Circuito.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SimuladorCoches/circuito/Circuito.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/SimuladorCoches/coche/Coche.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SimuladorCoches/coche/Coche.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/SimuladorCoches/marcas/audi/Audi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SimuladorCoches/marcas/audi/Audi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/SimuladorCoches/marcas/audi/motores/audi_4cyl330HP_450nm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SimuladorCoches/marcas/audi/motores/audi_4cyl330HP_450nm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/SimuladorCoches/marcas/seat/Seat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SimuladorCoches/marcas/seat/Seat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/SimuladorCoches/marcas/seat/motores/seat_cupra_4cyl300HP_450nm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SimuladorCoches/marcas/seat/motores/seat_cupra_4cyl300HP_450nm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/SimuladorCoches/marcas/seat/motores/seat_oem_4cyl190HP_400nm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SimuladorCoches/marcas/seat/motores/seat_oem_4cyl190HP_400nm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/SimuladorCoches/marcas/seat/motores/seat_racer_4cyl350HP_500nm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SimuladorCoches/marcas/seat/motores/seat_racer_4cyl350HP_500nm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/SimuladorCoches/marcas/seat/neumaticos/Neumaticos_serie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SimuladorCoches/marcas/seat/neumaticos/Neumaticos_serie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/SimuladorCoches/motor/Motor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SimuladorCoches/motor/Motor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/SimuladorCoches/motor/Motor_Actions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SimuladorCoches/motor/Motor_Actions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/SimuladorCoches/neumaticos/Neumaticos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SimuladorCoches/neumaticos/Neumaticos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/SimuladorCoches/neumaticos/Neumaticos_Actions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SimuladorCoches/neumaticos/Neumaticos_Actions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +123,7 @@
       <workItem from="1594975144338" duration="19000" />
       <workItem from="1594983840855" duration="721000" />
       <workItem from="1594984566886" duration="624000" />
-      <workItem from="1594985195601" duration="798000" />
+      <workItem from="1594985195601" duration="1425000" />
     </task>
     <servers />
   </component>
@@ -199,36 +171,36 @@
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="453" height="552" key="DebuggerActiveHint/0.23.1440.825/1440.23.1920.1177@0.23.1440.825" timestamp="1594811261923" />
-    <state width="1477" height="379" key="GridCell.Tab.0.bottom" timestamp="1594985743626">
+    <state width="1388" height="330" key="GridCell.Tab.0.bottom" timestamp="1594986702801">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1868" height="398" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1200@1440.0.1920.1200" timestamp="1594969083202" />
-    <state width="1477" height="379" key="GridCell.Tab.0.bottom/0.23.1440.825/1440.23.1920.1177@0.23.1440.825" timestamp="1594985743626" />
-    <state width="1477" height="379" key="GridCell.Tab.0.bottom/0.23.1440.825/1440.23.1920.1177@1440.23.1920.1177" timestamp="1594985425605" />
+    <state width="1388" height="330" key="GridCell.Tab.0.bottom/0.23.1440.825/1440.23.1920.1177@0.23.1440.825" timestamp="1594986702801" />
+    <state width="1868" height="330" key="GridCell.Tab.0.bottom/0.23.1440.825/1440.23.1920.1177@1440.23.1920.1177" timestamp="1594986525138" />
     <state width="1388" height="291" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1594836956230" />
     <state width="1868" height="398" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.0.1920.1200@1440.0.1920.1200" timestamp="1594969234984" />
-    <state width="1477" height="379" key="GridCell.Tab.0.center" timestamp="1594985743625">
+    <state width="1388" height="330" key="GridCell.Tab.0.center" timestamp="1594986702800">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1868" height="398" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1200@1440.0.1920.1200" timestamp="1594969083199" />
-    <state width="1477" height="379" key="GridCell.Tab.0.center/0.23.1440.825/1440.23.1920.1177@0.23.1440.825" timestamp="1594985743625" />
-    <state width="1477" height="379" key="GridCell.Tab.0.center/0.23.1440.825/1440.23.1920.1177@1440.23.1920.1177" timestamp="1594985425604" />
+    <state width="1388" height="330" key="GridCell.Tab.0.center/0.23.1440.825/1440.23.1920.1177@0.23.1440.825" timestamp="1594986702800" />
+    <state width="1868" height="330" key="GridCell.Tab.0.center/0.23.1440.825/1440.23.1920.1177@1440.23.1920.1177" timestamp="1594986525137" />
     <state width="1388" height="291" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1594836956229" />
     <state width="1868" height="398" key="GridCell.Tab.0.center/0.23.1440.877/1440.0.1920.1200@1440.0.1920.1200" timestamp="1594969234982" />
-    <state width="1477" height="379" key="GridCell.Tab.0.left" timestamp="1594985743623">
+    <state width="1388" height="330" key="GridCell.Tab.0.left" timestamp="1594986702800">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1868" height="398" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1200@1440.0.1920.1200" timestamp="1594969083197" />
-    <state width="1477" height="379" key="GridCell.Tab.0.left/0.23.1440.825/1440.23.1920.1177@0.23.1440.825" timestamp="1594985743623" />
-    <state width="1477" height="379" key="GridCell.Tab.0.left/0.23.1440.825/1440.23.1920.1177@1440.23.1920.1177" timestamp="1594985425603" />
+    <state width="1388" height="330" key="GridCell.Tab.0.left/0.23.1440.825/1440.23.1920.1177@0.23.1440.825" timestamp="1594986702800" />
+    <state width="1868" height="330" key="GridCell.Tab.0.left/0.23.1440.825/1440.23.1920.1177@1440.23.1920.1177" timestamp="1594986525136" />
     <state width="1388" height="291" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1594836956229" />
     <state width="1868" height="398" key="GridCell.Tab.0.left/0.23.1440.877/1440.0.1920.1200@1440.0.1920.1200" timestamp="1594969234981" />
-    <state width="1477" height="379" key="GridCell.Tab.0.right" timestamp="1594985743625">
+    <state width="1388" height="330" key="GridCell.Tab.0.right" timestamp="1594986702801">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1868" height="398" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1200@1440.0.1920.1200" timestamp="1594969083201" />
-    <state width="1477" height="379" key="GridCell.Tab.0.right/0.23.1440.825/1440.23.1920.1177@0.23.1440.825" timestamp="1594985743625" />
-    <state width="1477" height="379" key="GridCell.Tab.0.right/0.23.1440.825/1440.23.1920.1177@1440.23.1920.1177" timestamp="1594985425604" />
+    <state width="1388" height="330" key="GridCell.Tab.0.right/0.23.1440.825/1440.23.1920.1177@0.23.1440.825" timestamp="1594986702801" />
+    <state width="1868" height="330" key="GridCell.Tab.0.right/0.23.1440.825/1440.23.1920.1177@1440.23.1920.1177" timestamp="1594986525137" />
     <state width="1388" height="291" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1594836956229" />
     <state width="1868" height="398" key="GridCell.Tab.0.right/0.23.1440.877/1440.0.1920.1200@1440.0.1920.1200" timestamp="1594969234983" />
     <state width="1868" height="479" key="GridCell.Tab.1.bottom" timestamp="1594969916121">

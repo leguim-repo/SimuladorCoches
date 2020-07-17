@@ -1,11 +1,9 @@
 main/SimuladorCoches/circuito/Circuito.class
 main/SimuladorCoches/coche/Coche$1.class
 main/SimuladorCoches/Tools.class
-main/SimuladorCoches/Test.class
 main/SimuladorCoches/marcas/seat/motores/seat_racer_4cyl350HP_500nm.class
 main/SimuladorCoches/coche/Coche$Tipo.class
 main/SimuladorCoches/carrera/Carrera.class
-main/SimuladorCoches/Test$Tipo.class
 main/SimuladorCoches/marcas/seat/neumaticos/Neumaticos_serie.class
 main/SimuladorCoches/circuito/Curvas.class
 main/SimuladorCoches/carrera/tiempo.class
@@ -13,7 +11,6 @@ main/SimuladorCoches/motor/Motor.class
 main/SimuladorCoches/neumaticos/Neumaticos_Actions.class
 main/SimuladorCoches/marcas/audi/Audi.class
 main/SimuladorCoches/coche/Coche.class
-main/SimuladorCoches/Main.class
 main/SimuladorCoches/marcas/seat/Seat.class
 main/SimuladorCoches/neumaticos/Neumaticos.class
 main/SimuladorCoches/motor/Motor_Actions.class

@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.SimuladorCoches</groupId>
-    <artifactId>simuladorcoches</artifactId>
+    <artifactId>simuladorcoches</artifactId><!-- Nombre del proyecto-->
     <version>1.0-SNAPSHOT</version>
 
     <name>simuladorcoches</name>
